@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Landing Page</title>
+    <link rel="stylesheet" href="landingpage.css">
+</head>
+    
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Web Dev Creative</a></div>
+            <ul class="links">
+                <li><a href="#section-1">Home</a></li>
+                <li><a href="#section-2">About</a></li>
+                <li><a href="#section-3">Services</a></li>
+                <li><a href="#section-4">Contact</a></li>
+                <li><a href="#section-5">Everything</a></li>
+            </ul>
+            <a href="" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <img src="./images/menu_30px.png" alt="">
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="#section-1">Home</a></li>
+            <li><a href="#section-2">About</a></li>
+            <li><a href="#section-3">Services</a></li>
+            <li><a href="#section-4">Contact</a></li>
+            <li><a href="#section-5" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="section-1">
+        <div class="page">
+            <img src="./images/book.png" alt="book">
+        </div>
+        <div class="text">
+            <h1>Success starts with a great design book</h1><br>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quos fugit? Hic voluptate perspiciatis Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quos fugit? Hic voluptate perspiciatis Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quos fugit? Hic voluptate perspiciatis</h5><br>
+            <h5>Available in this formats. Enter your email and we will send you the book.</h5><br>
+            <input type="email" placeholder="    Enter your email">
+            <button>GET THE BOOK</button> 
+        </div>
+    </section>
+
+
+    <!-- WHATS INSIDE -->
+    <section id="whatsinside" class="section-2">
+        <div class="text-2">
+            <h1>Whats Inside</h1><br>
+            <h5>Lorem ipsum dolor sit amet  laboriosam repudiandae voluptatem architecto dolor impedit nihil, quis porro dicta earum voluptas facilis!</h5>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis tempore animi odio excepturi delectus velit perspiciatis laboriosam repudiandae voluptatem architecto dolor impedit nihil, quis porro dicta earum voluptas facilis! <br> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis tempore animi odio excepturi delectus velit perspiciatis laboriosam repudiandae voluptatem architecto dolor impedit nihil, quis porro dicta earum voluptas facilis!</h5>
+        </div>
+        <div class="content-2">
+            <div class="card">
+                h
+            </div>
+            <div class="card">
+            </div>
+            <div class="card">
+                <img src="./images/note.png" alt="notes">
+            </div>
+        </div>
+        <br><br><br>
+        <div class="content3">
+            <img src="./images/note.png" alt="notes">
+        </div>
+    </section>
+
+
+
+    <!-- AUTHOR -->
+    <section id="author" class="section-3">
+        <p>DON'T JUST TAKE OUR WORD FOR IT</p> 
+        <div class="accounts">
+            <div class="auth-1">
+                <h5 class="notes">The great design book powers our creative process and allows us to iterate on ideas for digital campaigns.</h5><br><br>
+                <img src="./images/mike.png" alt="">
+                <div class="inner-2">
+                    <h5>MIKE BUTTON</h5><br>
+                    <h6>Art Director, Pixel & Nudge</h6><br><br>
+                </div>
+            </div>
+    
+            <div class="auth-1">
+                <h5 class="notes">We wasted hours of work with previous methods. <br> The great design book makes campaign creation a cakewalk.</h5><br><br>
+                <img src="./images/jane.png" alt="">
+                <div class="inner-2">
+                    <h5>JANE CLICK</h5><br>
+                    <h6>Digital Marketer, ConvertableMetrics</h6><br><br>
+                </div> 
+            </div>
+        </div>
+        
+        <div class="author">
+                <img src="./images/author.png" alt="">
+            <div class="txt">
+                <h3>About the Author</h3><br><br>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Necessitatibus neque accusantium iste magnam ad nihil sequi cum aliquid <br>  laboriosam. Reprehenderit animi inventore eius quibusdam sapiente accusamus <br> minima vitae iste nulla Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Natus sit asperiores quae incidunt ullam officia explicabo perferendis ad, voluptatem  <br>accusamus illum aliquam esse aut, praesentium, deserunt corrupti exercitationem aperiam atque</h5>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <section id="footer">
+        <div class="end">
+            <img src="./images/o_50px.png" alt="logo image"><span>@ 2018 Unbounce All rights reserved</span>
+        </div>
+        <div class="end">
+            <span>BACK TO TOP </span><a href="#home"><img src="./images/arrow.png" alt=""></a>
+        </div>
+    </section>
+
+
+</body>
+    <script>
+             const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? './images/delete_26px.png'
+            : './images/menu_30px.png'
+        }
+    </script>
+</html>
